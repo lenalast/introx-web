@@ -1,0 +1,441 @@
+html, body {
+  margin: 0;
+  background-color: rgba(104, 168, 180, 0.68);
+  box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-shadow: #7b2e13 1px 1px;
+  color: rgb(254, 155, 59);
+}
+
+header {
+  display: flex;
+}
+
+.logo {
+  margin: 10px 0 0 40px;
+  width: 16%;
+  height: 16%;
+  /*filter: grayscale(100%) brightness(140%);*/
+}
+
+.hero {
+  background: url("assets/oland.jpg") no-repeat center;
+  background-size: cover;
+  height: 80vh;
+  box-sizing: border-box;
+}
+
+.overlay {
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(81, 130, 140, 0.71);
+  box-sizing: border-box;
+}
+
+/*.sticky-contact {*/
+  /*position: fixed;*/
+  /*top: 10px;*/
+  /*right: 10px;*/
+  /*height: auto;*/
+  /*padding: 20px 40px;*/
+  /*font-size: 12px;*/
+  /*font-family: 'Roboto', sans-serif;*/
+  /*color: white;*/
+  /*outline: none;*/
+  /*text-decoration: none;*/
+/*}*/
+
+/*.sticky-contact:hover {*/
+  /*cursor: alias;*/
+/*}*/
+
+.preamble {
+  height: 60vh;
+  margin-top: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: black 0 2px 20px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+
+.preamble h1 {
+  font-weight: 400;
+  font-size: 3.5em;
+}
+
+hr {
+  width: 50%;
+  height: 2px;
+  background-color: #fe6028;
+  border: none;
+}
+
+.default-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 40px 40px 20px 40px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  padding: 40px 0;
+  font-family: 'Roboto-light', sans-serif;
+}
+
+.text h1 {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-family: 'Open Sans-light', sans-serif;
+}
+
+.col1 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+
+.col2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 4%;
+  font-family: 'Roboto-light', sans-serif;
+}
+
+.img {
+  width: 40%;
+  height: 100%;
+  border-radius: 50%;
+  border: solid #fe6028 2px;
+}
+
+.col2-text {
+  width: 60%;
+}
+
+.col2-text h1 {
+  font-size: 2em;
+  font-weight: 400;
+  font-family: "Open Sans-light", sans-serif;
+  margin-bottom: 20px;
+}
+
+ul, li {
+  list-style: none;
+  font-size: 1.2em;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.artists-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.round-img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: solid #fe6028 2px;
+  margin-left: 1%;
+  margin-bottom: 1%;
+}
+
+.customers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 40%;
+  height: 250px;
+  margin-top: 40px;
+  padding: 40px 0;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.customers p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  padding: 20px;
+  color: #68a8b4;
+  text-align: center;
+}
+
+.customers a {
+  display: flex;
+  justify-content: center;
+}
+
+.customer-img {
+  width: 70%;
+  height: 60%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 80px 160px;
+  margin-top: 80px;
+  color: white;
+  font-family: 'Roboto-light', sans-serif;
+  background-color: #68a8b4;
+  box-sizing: border-box;
+}
+
+footer h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+footer a, p {
+  font-size: 14px;
+}
+
+.footer-center {
+  margin: 0 80px 0 80px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 80px;
+  font-family: cursive;
+  color: rgba(0, 0, 0, 0.51);
+  background-color: #68a8b4;
+  box-sizing: border-box;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  color: white;
+  background-color: #68a8b4;
+  box-sizing: border-box;
+}
+
+@media all and (max-width: 1024px) {
+  .logo {
+    width: 22%;
+    height: 22%;
+    margin: 20px 0 0 40px;
+  }
+
+  .sticky-contact {
+    top: 24px;
+    font-size: 18px;
+  }
+
+  .preamble {
+    height: 60vh;
+  }
+
+  .text {
+    width: 70%;
+    padding: 10px 0;
+    font-size: 1.2em;
+  }
+
+  .round-img {
+    width: 180px;
+    height: 180px;
+    margin-left: 2%;
+  }
+
+  .col2-text {
+    width: 60%;
+    font-size: 1.2em;
+  }
+
+  .reviews {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .logo {
+    width: 26%;
+    height: 26%;
+    margin: 20px 0 0 40px;
+  }
+
+  .sticky-contact {
+    top: 24px;
+    font-size: 18px;
+  }
+
+  .preamble {
+    height: 60vh;
+    margin-top: 140px;
+  }
+
+  .text {
+    width: 80%;
+    padding: 10px 0;
+    font-size: 1.6em;
+  }
+
+  .round-img {
+    width: 140px;
+    height: 140px;
+    margin-left: 2%;
+  }
+
+  .col2-text {
+    width: 70%;
+    font-size: 1.2em;
+  }
+
+  .reviews {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .overlay {
+    height: 60vh;
+  }
+
+  .logo {
+    width: 24%;
+    height: 24%;
+    margin: 10px 0 0 20px;
+  }
+
+  .preamble {
+    height: 60vh;
+    margin-top: 60px;
+    padding: 10px;
+    font-size: 0.6em;
+  }
+
+  .sticky-contact {
+    top: 2px;
+    right: -14px;
+    font-size: 12px;
+  }
+
+  .text {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
+  }
+
+  .round-img {
+    width: 100px;
+    height: 100px;
+    margin-left: 0;
+  }
+
+  .col2-text {
+    width: 80%;
+    font-size: 0.8em;
+  }
+
+  .customers {
+    width: 80%;
+    height: 200px;
+  }
+
+  .customers p {
+    font-size: 0.8em;
+  }
+
+  .customers a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .customer-img {
+    width: 70%;
+    height: 60%;
+  }
+
+  footer {
+    display: block;
+    padding: 20px;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  .footer-left h3 {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  .footer-center h3 {
+    font-size: 12px;
+  }
+
+  .footer-right h3 {
+    font-size: 12px;
+  }
+
+  .reviews {
+    text-align: center;
+    padding: 0 20px 20px 20px;
+    font-size: 1em;
+  }
+}
+
+.ticket-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 80px 0 20px 0;
+}
+
+.ticket-img {
+  width: 50%;
+  height: 50%;
+}
